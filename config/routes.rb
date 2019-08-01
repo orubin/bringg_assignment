@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  namespace :api, constraints: { format: :json } do
+    namespace :v1 do
+      post 'orders/new', to: 'orders#create'
+      get 'orders/:id', to: 'orders#show'
+      patch 'orders/:id', to: 'orders#update'
+    end
+  end
 end
