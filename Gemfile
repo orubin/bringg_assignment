@@ -33,6 +33,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-session'
+  gem 'mocha'
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
