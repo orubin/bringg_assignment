@@ -14,7 +14,6 @@ module OrdersHelper
       if tasks && tasks.size > 0
         tasks.each do |task|
           parsed_date = Date.parse(task['scheduled_at'])
-          # binding.pry
           if range === parsed_date
             result << task
           end

@@ -46,7 +46,6 @@ class OrdersHelperTest < ActionDispatch::IntegrationTest
     assert res[1]['scheduled_at'] == yesterday
     assert res[2]['scheduled_at'] == yesterday
   end
-  
 
   private
 
