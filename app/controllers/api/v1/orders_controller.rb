@@ -19,7 +19,6 @@ class Api::V1::OrdersController < ApplicationController
     def get_last_week_orders
       render json: {error: 'Missing phone'}, status: 422 and return if @phone.nil? || @phone.empty?
       start_date, end_date = DateHelper.get_previous_week_dates
-      # binding.pry
       response = OrdersHelper.get_orders_per_timeframe(@phone, start_date, end_date)
       
       if response
