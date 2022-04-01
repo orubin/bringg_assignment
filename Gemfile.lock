@@ -94,7 +94,7 @@ GEM
     pry-session (0.0.3)
       pipeable
       pry
-    puma (4.3.11)
+    puma (4.3.12)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
